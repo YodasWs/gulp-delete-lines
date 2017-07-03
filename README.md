@@ -1,5 +1,5 @@
 # gulp-rm-lines
-A gulp plugin that will delete all lines that matches one of the given regex filters.
+A gulp plugin that will delete all lines that match one of the given regex filters.
 
 ## Notes
 With respect to Carsten Schäfer's [work](https://www.npmjs.com/package/gulp-delete-lines) but now supports multiple filters.
