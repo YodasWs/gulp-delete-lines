@@ -1,5 +1,4 @@
-const through = require('through2'),
-  gutil = require('gulp-util');
+const through = require('through2');
 
 module.exports = function (opt) {
   return through.obj(function (file, enc, cb) {
@@ -9,7 +8,7 @@ module.exports = function (opt) {
 		}
 
 		if (file.isStream()) {
-			cb(new gutil.PluginError('gulp-rm-lines', 'Streaming not supported'));
+			cb(new Error('gulp-rm-lines does not support streaming'));
 			return;
 		}
 
